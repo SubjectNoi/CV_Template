@@ -1,6 +1,6 @@
 \documentclass[a4paper]{article}
 	\usepackage[colorlinks, linkcolor=red]{hyperref}
-	\usepackage[zihao=-5]{ctex}
+	\usepackage{ctex}
 	\IfFontExistsTF{Times New Roman}{
 		\setmainfont{Times New Roman}
 	}{
@@ -37,11 +37,11 @@
 	\usepackage[
 	restoremathleading=false,
 	UseMSWordMultipleLineSpacing,
-	MSWordLineSpacingMultiple=1.1
+	MSWordLineSpacingMultiple=1.05
 	]{zhlineskip}
-	\title{LIU ZIHAN (Altair)}
-	\author{\url{altair.liu@sjtu.edu.cn}, +86 159 0215 7531}
-	\date{Personal Site: \url{http://subjectnoi.github.io/about/}}
+	\title{刘子汉 (Altair)}
+	\author{\url{altair.liu@sjtu.edu.cn}，+86 159 0215 7531}
+	\date{个人主页：\url{http://subjectnoi.github.io/about/}}
 	\usepackage{graphicx}
 	\usepackage{booktabs}
 	\usepackage{amsmath}
@@ -50,39 +50,40 @@
 	\geometry{left=1cm, right=1cm, top=0cm, bottom=0cm}
 	\begin{document}
 		\maketitle
-		\section*{Education}
+		\section*{教育}
 		\rule[1pt]{18cm}{0.01em}\\
-		\textbf{2015.09-2019.06} \hfill \textbf{Bachelor, Department of Computer Science, East China Normal University}
+		\textbf{2015.09-2019.06} \hfill \textbf{学士，计算机科学与技术系，华东师范大学}
 		\begin{itemize}
-		\item GPA: 3.81/4.00, Rank: 5/116
-		\item Scholarship in 2018/2019, MCM S award in 2018, $ 3^{rd} $ prize of CCCC Programming Contest in 2016
-		\item Being recommended to \textbf{department of Computer Science, Shanghai Jiao Tong University} without exam.
+		\item 平均绩点：3.81/4.00，排名：5/116。
+		\item 2018、2019年获得奖学金，2018年获得美国大学生数学建模竞赛S奖，2016年获得CCCC全国大学生程序设计竞赛三等奖。
+		\item 获得华东师范大学2019年免试研究生资格，并被上海交通大学录取。
 		\end{itemize}
-		\textbf{2019.09-Now} \hfill \textbf{Master, Department of Computer Science, Shanghai Jiao Tong University}
+		\textbf{2019.09-Now} \hfill \textbf{硕士，计算机科学与技术系，上海交通大学}
 		\begin{itemize}
-		\item Working on computer system structure, parallel computing and compiler.
+		\item 进行计算机系统组成架构、并行计算、编译器等方面的工作。
 		\end{itemize}
-		\section*{Job}
+		\section*{工作}
 		\rule[1pt]{18cm}{0.01em}\\
-		\textbf{2018.08-2019.01} \hfill \textbf{IBSO Cloud Development, SAP (Intern)}
+		\textbf{2018.08-2019.01} \hfill \textbf{云应用开发，IBSO，SAP(实习)}
 		\begin{itemize}
-		\item Developing cloud application deployed on \textbf{Cloud Foundry} based on \textbf{Java} and corresponding tools (\textbf{Spring, OData, MongoDB}), project is constructed by \textbf{Maven}, version control by \textbf{git} and \textbf{Jenkins}.
-		\item Developing \textbf{S/4 HANA} application deployed on \textbf{Cloud Foundry} based on \textbf{Java}, \textbf{SAPUI5}, and doing related unit and integrate test based on \textbf{karma}, \textbf{QUnit} and \textbf{Opa5}.
+		\item 从事基于Java以及相关工具(Spring，OData，MongoDB等)的部署于Cloud Foundry的商用工具(MaCo Cloud)的开发工作，以及协助使用Jenkins与git进行版本管理，项目使用Maven构建。
+		\item 从事基于Java，SAPUI5以及相关工具的部署于Cloud Foundry的S/4 HANA应用的开发工作，使用Karma，QUnit与Opa5进行相应单元测试、集成测试。
 		\end{itemize}
-		\textbf{2019.01-2019.06} \hfill \textbf{GPU SM Arch, NVIDIA (Intern)}
+		\textbf{2019.01-2019.06} \hfill \textbf{GPU流多处理器架构，ARCH，NVIDIA(实习)}
 		\begin{itemize}
-		\item Developing modelling tool for software level stimulation and verification on functionality and performance on next generation GPU circuit (Ampere and Hopper Architecture). Project is based on \textbf{C/C++/CUDA}, \textbf{PTX} (IR in middle level), \textbf{SASS} (micro-instruction on hardware), and a little bit \textbf{Verilog HDL}. Project is constructed by \textbf{cmake}, version control by \textbf{Perforce} and \textbf{Crucible}.
+		\item 从事下一代硬件(Ampere与Hopper架构)的软件层面功能与性能仿真、验证工具的开发。项目基于C/C++/CUDA、PTX中间代码、SASS汇编代码与少量Verilog HDL硬件代码。主要进行新指令UMMA的功能实现、调试以及对软件仿真与片上仿真的结果进行对比、研究、修改软件仿真代码。项目使用cmake构建、Perforce进行版本控制。
 		\end{itemize}
-		\section*{Project Experience}
+		\section*{项目经验}
 		\rule[1pt]{18cm}{0.01em}
 		\begin{itemize}
-		\item ML related course projects using DCGAN, parallel DBSCAN, min-max search with $ \alpha-\beta $ cutting, NSGA II, etc. 
-		\item Simplified compiler of C-like language using Lex, Yacc and LVMM. 
-		\item 3-D action game using Unreal Engine 4.
+		\item 机器学习相关课程项目，包括基于DCGAN的图像合成，基于CUDA、OpenMP、MPI的并行化算法如DCGAN，基于$ \alpha-\beta $剪枝的最大最小搜索的五子棋，基于NSGA II的规划任务等。
+		\item 从硬件到软件层面再机器学习应用方面对图灵架构GPU进行的研究，作为毕业设计。
+		\item 简化的类C语言编译器，使用Lex，Yacc以及LLVM。 
+		\item 基于虚幻4引擎开发的第三人称视角动作游戏。
 		\end{itemize}
 		\section*{Skills}
 		\rule[1pt]{18cm}{0.01em}\\
-		C/C++/CUDA, ACM/ML/DL Algorithm and Data Structure, Linux, \LaTeX, Python, Java, SQL/MongoDB, Unreal Engine 4, Verilog HDL.
+		C/C++/CUDA，ACM/机器学习/深度学习相关算法及数据结构，Linux，\LaTeX，Python，Java，SQL/MongoDB，虚幻4引擎，Verilog HDL.
 		
 	\end{document}
 

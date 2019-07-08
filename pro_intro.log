@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.3.23)  8 JUL 2019 11:32
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.3.23)  8 JUL 2019 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -338,25 +338,6 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 (f:/LaTeX/texlive/2018/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
 File: ctexopts.cfg 2018/01/28 v2.4.12 Option configuration file (CTEX)
 )
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! LaTeX error: "kernel/key-choice-unknown"
-! 
-! Key 'ctex/option/zihao' accepts only a fixed set of choices.
-! 
-! See the LaTeX3 documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.366 \ProcessKeysOptions { ctex / option }
-                                           
-|'''''''''''''''''''''''''''''''''''''''''''''''
-| The key 'ctex/option/zihao' only accepts predefined values, and '-5' is not
-| one of these.
-|...............................................
-
 (f:/LaTeX/texlive/2018/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
 File: ctex-engine-xetex.def 2018/01/28 v2.4.12 XeLaTeX adapter (CTEX)
 
@@ -1296,7 +1277,7 @@ Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 
 Package zhlineskip Warning: Use Microsoft Word multiple line spacing
 (zhlineskip)                Singlespace to fontsize ratio = `1.296875'
-(zhlineskip)                Multiple = `1.1'.
+(zhlineskip)                Multiple = `1.05'.
 
 
 Package zhlineskip Warning: mathtools is NOT loaded by zhlineskip
@@ -1629,16 +1610,16 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 .................................................
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 58.
+(Font)              size <10.95> substituted on input line 79.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
  (./pro_intro.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 87.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `pro_intro.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
 
@@ -1646,14 +1627,14 @@ Package rerunfilecheck Info: File `pro_intro.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 87.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 27912 strings out of 492970
- 539318 string characters out of 6134778
- 649322 words of memory out of 5000000
- 31656 multiletter control sequences out of 15000+600000
- 535982 words of font info for 72 fonts, out of 8000000 for 9000
+ 27999 strings out of 492970
+ 544498 string characters out of 6134778
+ 652111 words of memory out of 5000000
+ 31736 multiletter control sequences out of 15000+600000
+ 536022 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  53i,7n,73p,10449b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
 
