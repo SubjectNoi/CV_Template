@@ -1,7 +1,46 @@
 \documentclass[a4paper]{article}
 	\usepackage[colorlinks, linkcolor=red]{hyperref}
+	\usepackage[zihao=-5]{ctex}
+	\IfFontExistsTF{Times New Roman}{
+		\setmainfont{Times New Roman}
+	}{
+		\usepackage{newtxtext,newtxmath}
+	}
+	
+	%设置文档中文字体。优先次序：中易 > Adobe > 华文(Mac) > Fandol
+	\IfFontExistsTF{SimSun}{
+		\setCJKmainfont[AutoFakeBold=2,ItalicFont=KaiTi]{SimSun}
+	}{
+		\IfFontExistsTF{AdobeSongStd-Light}{
+			\setCJKmainfont[AutoFakeBold=2,ItalicFont=AdobeKaitiStd-Regular]{AdobeSongStd-Light}
+		}{
+			\IfFontExistsTF{STSong}{
+				\setCJKmainfont[AutoFakeBold=2,BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
+			}{
+				\setCJKmainfont[AutoFakeBold=2,ItalicFont=FandolKai-Regular]{FandolSong-Regular}
+			}
+		}
+	}
+	\IfFontExistsTF{SimHei}{
+		\setCJKsansfont[AutoFakeBold=2]{SimHei}
+	}{
+		\IfFontExistsTF{AdobeHeitiStd-Regular}{
+			\setCJKsansfont[AutoFakeBold=2]{AdobeHeitiStd-Regular}
+		}{
+			\IfFontExistsTF{STHeiti}{
+				\setCJKsansfont [AutoFakeBold=2]{STHeiti}
+			}{
+				\setCJKsansfont[AutoFakeBold=2]{FandolHei-Regular}
+			}
+		}
+	}
+	\usepackage[
+	restoremathleading=false,
+	UseMSWordMultipleLineSpacing,
+	MSWordLineSpacingMultiple=1.1
+	]{zhlineskip}
 	\title{LIU ZIHAN (Altair)}
-	\author{\url{ilovehanhan1120@hotmail.com}, +86 159 0215 7531}
+	\author{\url{altair.liu@sjtu.edu.cn}, +86 159 0215 7531}
 	\date{Personal Site: \url{http://subjectnoi.github.io/about/}}
 	\usepackage{graphicx}
 	\usepackage{booktabs}
@@ -12,17 +51,20 @@
 	\begin{document}
 		\maketitle
 		\section*{Education}
-		\rule[1pt]{19cm}{0.01em}\\
-		\textbf{2015.09-2019.06} \hfill \textbf{Department of Computer Science, East China Normal University}
+		\rule[1pt]{18cm}{0.01em}\\
+		\textbf{2015.09-2019.06} \hfill \textbf{Bachelor, Department of Computer Science, East China Normal University}
 		\begin{itemize}
 		\item GPA: 3.81/4.00, Rank: 5/116
 		\item Scholarship in 2018/2019, MCM S award in 2018, $ 3^{rd} $ prize of CCCC Programming Contest in 2016
-		\item Being recommended as a post-graduate without exam, and admitted by the \textbf{department of Computer Science, Shanghai Jiao Tong University}.
-		\item 4.0 in following courses: \textbf{Compiler Principle, Parallel Computing, Computer System structure, Data Structure and Algorithm, Embedded System Principle, Pattern Recognization, Convex Optimization, Analogous/Digital Circuit, C++,} etc.
+		\item Being recommended to \textbf{department of Computer Science, Shanghai Jiao Tong University} without exam.
+		\end{itemize}
+		\textbf{2019.09-Now} \hfill \textbf{Master, Department of Computer Science, Shanghai Jiao Tong University}
+		\begin{itemize}
+		\item Working on computer system structure, parallel computing and compiler.
 		\end{itemize}
 		\section*{Job}
-		\rule[1pt]{19cm}{0.01em}\\
-		\textbf{2018.08-2019.01} \hfill \textbf{IBSO Cloud Development, SAP (Intern)}\\
+		\rule[1pt]{18cm}{0.01em}\\
+		\textbf{2018.08-2019.01} \hfill \textbf{IBSO Cloud Development, SAP (Intern)}
 		\begin{itemize}
 		\item Developing cloud application deployed on \textbf{Cloud Foundry} based on \textbf{Java} and corresponding tools (\textbf{Spring, OData, MongoDB}), project is constructed by \textbf{Maven}, version control by \textbf{git} and \textbf{Jenkins}.
 		\item Developing \textbf{S/4 HANA} application deployed on \textbf{Cloud Foundry} based on \textbf{Java}, \textbf{SAPUI5}, and doing related unit and integrate test based on \textbf{karma}, \textbf{QUnit} and \textbf{Opa5}.
@@ -32,17 +74,16 @@
 		\item Developing modelling tool for software level stimulation and verification on functionality and performance on next generation GPU circuit (Ampere and Hopper Architecture). Project is based on \textbf{C/C++/CUDA}, \textbf{PTX} (IR in middle level), \textbf{SASS} (micro-instruction on hardware), and a little bit \textbf{Verilog HDL}. Project is constructed by \textbf{cmake}, version control by \textbf{Perforce} and \textbf{Crucible}.
 		\end{itemize}
 		\section*{Project Experience}
-		\rule[1pt]{19cm}{0.01em}\\
+		\rule[1pt]{18cm}{0.01em}
 		\begin{itemize}
-		\item Course projects based on traditional ML algorithm including min-max Search and $ \alpha\beta $ pruning, Bayes Belief Network.
-		\item Course projects based on DL algorithm including DCGAN, WGAN-GP with frameworks and TensorRT.
-		\item Parallel ML algorithm including SMO-SVM, DBSCAN, RF, CNN using CUDA, MPI, OpenMP.
-		\item Compiler with Lex and Yacc (FLex and Bison).
-		\item Performance analysis about new generation GPU (Turing and Volta) as graduation design.
-		\item Third-Person free camera 3-D action game with Unreal Engine 4.
+		\item ML related course projects using DCGAN, parallel DBSCAN, min-max search with $ \alpha-\beta $ cutting, NSGA II, etc. 
+		\item Simplified compiler of C-like language using Lex, Yacc and LVMM. 
+		\item 3-D action game using Unreal Engine 4.
 		\end{itemize}
 		\section*{Skills}
-		\rule[1pt]{19cm}{0.01em}\\
+		\rule[1pt]{18cm}{0.01em}\\
 		C/C++/CUDA, ACM/ML/DL Algorithm and Data Structure, Linux, \LaTeX, Python, Java, SQL/MongoDB, Unreal Engine 4, Verilog HDL.
 		
 	\end{document}
+
+
