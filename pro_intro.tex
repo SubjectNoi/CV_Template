@@ -1,39 +1,7 @@
 \documentclass[a4paper]{article}
 	\usepackage[colorlinks, linkcolor=red]{hyperref}
 	\usepackage{ctex}
-	\IfFontExistsTF{Times New Roman}{
-		\setmainfont{Times New Roman}
-	}{
-		\usepackage{newtxtext,newtxmath}
-	}
-	
-	%设置文档中文字体。优先次序：中易 > Adobe > 华文(Mac) > Fandol
-	\IfFontExistsTF{SimSun}{
-		\setCJKmainfont[AutoFakeBold=2,ItalicFont=KaiTi]{SimSun}
-	}{
-		\IfFontExistsTF{AdobeSongStd-Light}{
-			\setCJKmainfont[AutoFakeBold=2,ItalicFont=AdobeKaitiStd-Regular]{AdobeSongStd-Light}
-		}{
-			\IfFontExistsTF{STSong}{
-				\setCJKmainfont[AutoFakeBold=2,BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
-			}{
-				\setCJKmainfont[AutoFakeBold=2,ItalicFont=FandolKai-Regular]{FandolSong-Regular}
-			}
-		}
-	}
-	\IfFontExistsTF{SimHei}{
-		\setCJKsansfont[AutoFakeBold=2]{SimHei}
-	}{
-		\IfFontExistsTF{AdobeHeitiStd-Regular}{
-			\setCJKsansfont[AutoFakeBold=2]{AdobeHeitiStd-Regular}
-		}{
-			\IfFontExistsTF{STHeiti}{
-				\setCJKsansfont [AutoFakeBold=2]{STHeiti}
-			}{
-				\setCJKsansfont[AutoFakeBold=2]{FandolHei-Regular}
-			}
-		}
-	}
+
 	\usepackage[
 	restoremathleading=false,
 	UseMSWordMultipleLineSpacing,
@@ -74,9 +42,9 @@
 		\section*{Project Experience}
 		\rule[1pt]{18cm}{0.01em}
 		\begin{itemize}
-		\item Research and optimize AI inference chip Cambricon MLU100 combined with Open Neural Network eXchange (ONNX). 
-		\item Simplified C-like compiler using Lex, Yacc and LLVM. Take part in the translate of \emph{Getting start with LLVM core libraries}.
-		\item Research the new architecture (Turing and Volta with Tensor Core) and optimize the performance of various ML apps on GPU as bachelor graduate project, and use GPGPU-SIM to adjust the existing architecture (to systonic array like TPU). 
+		\item Research and optimize ONNX back-end on AI inference chip Cambricon MLU100. 
+		\item Simplified C-like compiler using Lex, Yacc and LLVM. Taking part in the translation of compiler related cookbook.
+		\item Research the new architecture (Turing and Volta with Tensor Core) and optimize the performance of various ML apps on GPU as bachelor graduate project, and use GPGPU-SIM to adjust the existing architecture (to systolic array like TPU). 
 		\item In bachelor stage, there are various cource projects including the using of various ML algorithm (NSGA-II, MOEA/D, Gaussian Process, HMM/CRF, DBSCAN, NNs including C-LSTM, WGAN-GP, etc.), various tools (Unreal Engine 4 for a 3-D action game), etc.
 		\end{itemize}
 		\section*{Skills}
