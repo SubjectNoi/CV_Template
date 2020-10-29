@@ -1,56 +1,95 @@
-\documentclass[a4paper]{article}
+\documentclass[twocolumn, 9pt]{article}
 	\usepackage[colorlinks, linkcolor=red]{hyperref}
 	\usepackage{ctex}
 
+	\usepackage{titlesec}
+	\newfontfamily\courier{Courier New}
+	\newfontfamily\EBITC{Eras Bold ITC}
+	\newfontfamily\TNR{Times New Roman}
 	\usepackage[
 	restoremathleading=false,
 	UseMSWordMultipleLineSpacing,
 	MSWordLineSpacingMultiple=1.1
 	]{zhlineskip}
-	\title{LIU ZIHAN (Altair)}
-	\author{\url{altair.liu@sjtu.edu.cn}, +86 159 0215 7531}
+	\title{\textbf{\TNR LIU ZIHAN (Altair)}}
+	\author{\url{ilovehanhan1120@hotmail.com}, +86 159 0215 7531}
 	\date{Personal Site: \url{http://subjectnoi.github.io/about/}}
 	\usepackage{graphicx}
 	\usepackage{booktabs}
+	\usepackage{xcolor}
+	\usepackage{titlesec}
 	\usepackage{amsmath}
 	\usepackage{listings}
 	\usepackage{geometry}
-	\geometry{left=1cm, right=1cm, top=0cm, bottom=0cm}
+	\geometry{left=1cm, right=1cm, top=0cm, bottom=2cm}
 	\begin{document}
 		\maketitle
-		\section*{Education}
-		\rule[1pt]{18cm}{0.01em}\\
+
+		\section*{{\EBITC Education}\vspace{-1.2em}}
+		\noindent
+		\rule[0.01em]{\linewidth}{0.01em}
 		\textbf{2015.09-2019.06} \hfill \textbf{Bachelor, Department of Computer Science, East China Normal University}
 		\begin{itemize}
-		\item GPA: 3.81/4.00, Rank: 5/116, scholarship in 2018/2019. Awards in MCM, programme contest, etc.
+		\item GPA: 3.81/4.00, Rank: 5/116, scholarship in 2018/2019. Awards in MCM, CCCC programming contest, etc.
 		\end{itemize}
-		\textbf{2019.09-Now} \hfill \textbf{Master, Department of Computer Science, Shanghai Jiao Tong University}
+		\textbf{2019.09-2022.03(Expected)} \hfill \textbf{Master, Department of Computer Science, Shanghai Jiao Tong University}
 		\begin{itemize}
-		\item ReArch Lab, researching on AI chip architecture and optimization, neural networks frameworks and compiler. 
+		\item ReArch Lab, researching on computer system architecture, AI chip, compiler optimization, etc. 
 		\end{itemize}
-		\section*{Job}
-		\rule[1pt]{18cm}{0.01em}\\
-		\textbf{2018.08-2019.01} \hfill \textbf{IBSO Cloud Development, SAP (Intern)}
-		\begin{itemize}
-		\item Developing cloud application deployed on \textbf{Cloud Foundry} based on \textbf{Java} and corresponding tools (\textbf{Spring, OData, MongoDB}), project is constructed by \textbf{Maven}, version control by \textbf{git} and \textbf{Jenkins}.
-		\item Developing \textbf{S/4 HANA} application deployed on \textbf{Cloud Foundry} based on \textbf{Java}, \textbf{SAPUI5}, and doing related unit and integrate test based on \textbf{karma}, \textbf{QUnit} and \textbf{Opa5}.
-		\end{itemize}
-		\textbf{2019.01-2019.06} \hfill \textbf{GPU SM Arch, NVIDIA (Intern)}
-		\begin{itemize}
-		\item Developing modelling tool for software level stimulation and verification on functionality and performance on next generation GPU circuit (Ampere and Hopper Architecture). Project is based on \textbf{C/C++/CUDA}, \textbf{PTX} (IR in middle level), \textbf{SASS} (micro-instruction on hardware), and a little bit \textbf{Verilog HDL}. I mainly worked on logic of new instruction UMMA. Project is constructed by \textbf{cmake}, version control by \textbf{Perforce}.
-		\end{itemize}
-		\section*{Project Experience}
-		\rule[1pt]{18cm}{0.01em}
-		\begin{itemize}
-		\item Research and optimize ONNX back-end on AI inference chip Cambricon MLU100. 
-		\item Simplified C-like compiler using Lex, Yacc and LLVM. Taking part in the translation of compiler related cookbook.
-		\item Research the new architecture (Turing and Volta with Tensor Core) and optimize the performance of various ML apps on GPU as bachelor graduate project, and use GPGPU-SIM to adjust the existing architecture (to systolic array like TPU). 
-		\item In bachelor stage, there are various cource projects including the using of various ML algorithm (NSGA-II, MOEA/D, Gaussian Process, HMM/CRF, DBSCAN, NNs including C-LSTM, WGAN-GP, etc.), various tools (Unreal Engine 4 for a 3-D action game), etc.
-		\end{itemize}
-		\section*{Skills}
-		\rule[1pt]{18cm}{0.01em}\\
-		C/C++/CUDA, ACM/ML/DL Algorithm and Data Structure, Linux, \LaTeX, Python, Java, SQL/MongoDB, Unreal Engine 4, Verilog HDL.
-		
-	\end{document}
 
+		\section*{{\EBITC Job}\vspace{-1.2em}}
+		\noindent
+		\rule[0.01em]{\linewidth}{0.01em}
+		\textbf{2018.08-2019.01} \hfill Intern, \textbf{DBS(IBSO), SAP}
+		\begin{itemize}
+		\item Developing cloud and {\courier S/4 HANA} application deployed on {\courier Cloud Foundry} based on {\courier Java, SAPUI5} with corresponding tools ({\courier Spring, OData, MongoDB}), also responsible for unit and integrated test based on {\courier karma, QUnit, Opa5}.
+		\end{itemize}
+		\textbf{2019.01-2019.06} \hfill Intern, \textbf{GPU SM Arch, NVIDIA}
+		\begin{itemize}
+		\item Developing cycle level simulator with {\courier C++, PTX, SASS} for functionality verification and performance modeling on next generation GPU circuit. I mainly worked on the logic of a series of new matrix instructions.
+        \end{itemize}
+        \textbf{2020.06-2020.12} \hfill Intern, \textbf{LLVM CodeGen, Intel}
+        \begin{itemize}
+        \item Researching and developing on compiler back-end optimization ({\courier LLVM}) for next generation Intel CPU. I mainly worked on the intrinsics related with new matrix instructions. 
+		\end{itemize}
+		
+		\section*{{\EBITC Project Experience}\vspace{-1.2em}}
+		\noindent
+		\rule[0.01em]{\linewidth}{0.01em}
+		\subsubsection*{Compiling and optimizing tool chain for military intelligent chip.}
+		\emph{2018.12-2020.07, SJTU, ICT-CAS, Logistic Department of Central Military Commission of P.R.C., project of National Defence Science and Technology Innovation Center.}
+		\begin{itemize}
+		\item Implement a full-stack compiler tool chain for Cambricon MLU-100 in {\courier C++, Python} with {\courier ONNX} and {\courier TVM} $ ^{\lbrack 1\rbrack} $.
+		\item Research and develop a series of hardware-aware graph level optimization procedures$ ^{\lbrack 2\rbrack} $. 
+		\end{itemize}
+        \subsubsection*{Profiling of Turing GPU and corresponding AI framework optimization.}
+		\emph{2018.07-2019.06, ECNU, project of graduation design.}
+		\begin{itemize}
+		\item Conduct the profiling from micro-benchmark to whole neural networks on new architecture GPUs, study the performance pattern and bottleneck.
+		\item Adjust the {\courier C++} and {\courier PTX} code of Convolution computation with the feature of Tensor Core in {\courier Tensor Flow} according to the profiling result to improve the throughput.
+		\end{itemize}
+		\subsubsection*{Simple compiler for C like programming language.}
+		\emph{2018.01-2018.07, ECNU, project of Compiler Principle}
+		\begin{itemize}
+		\item Implement the front-end and corresponding optimization procedures of a C-like language with {\courier lex} and {\courier yacc}, the generated IR is executed with an interpreter. 
+		\end{itemize}
+
+		\section*{{\EBITC Skills}\vspace{-1.2em}}
+		\noindent
+		\rule[0.01em]{\linewidth}{0.01em}
+		C/C++/CUDA/x86-64, ACM/ML/DL Algorithm and Data Structure, Linux, \LaTeX, Python, Java, SQL/MongoDB, Unreal Engine 4, Verilog HDL.
+
+		\section*{{\EBITC Publications}\vspace{-1.2em}}
+		\noindent
+		\rule[0.01em]{\linewidth}{0.01em}
+		\begin{enumerate}
+		\item Zihan Liu, Jingwen Leng, Minyi Guo et al. "Survey and Design of Paleozoic: a High-Performance Compiler Tool Chain for Deep Learning Inference Accelerator," In: \emph{CCF Trans. HPC}, 2020.
+		\item Zihan Liu, Jingwen Leng, Minyi Guo et al. "DLFusion: An Auto-Tuning Compiler for Layer Fusion on Deep Neural Network Accelerator," In: \emph{ISPA}, 2020.
+		\end{enumerate}
+
+		\section*{{\EBITC Hobbies}\vspace{-1.2em}}
+		\noindent
+		\rule[0.01em]{\linewidth}{0.01em}
+		Saxophone, PC/Console Game, Basketball
+	\end{document}
 
